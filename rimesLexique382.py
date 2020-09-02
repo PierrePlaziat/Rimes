@@ -6,7 +6,7 @@ import pandas as pd
 
 search = input()
 
-lex = pd.read_csv('Lexique382.tsv', sep='\t')
+lex = pd.read_csv('LexiquesDeOpenLexicon/Lexique382.tsv', sep='\t')
 lex.head()
 searchdetail = lex[lex.ortho==search]
 phons = searchdetail.iloc[0,22]
